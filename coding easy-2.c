@@ -122,7 +122,7 @@ Node *reverse(Node *head)
     return prev;             /* 原来的最后一个节点成了新头 */
 }
 
-/* ---------- main：按题目顺序演示一遍 ---------- */
+/* ---------- main---------- */
 int main(void)
 {
     Node *head;
@@ -174,7 +174,7 @@ int main(void)
     printf("反转后:   ");
     print_list(head);
 
-    /* 释放内存（作业没要求，但这是好习惯） */
+    /* 释放内存 */
     while (head != NULL) {
         Node *t = head;
         head = head->next;
